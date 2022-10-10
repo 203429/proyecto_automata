@@ -1,28 +1,43 @@
+from importlib.resources import path
 import transitions as dfa
 import os
 
 validated_lines = []
 path_items = []
 
-def get_paths():
-    path = ".\examples"
+def restart_lists():
+    global validated_lines
+    global path_items
+    validated_lines = []
+    path_items = []
+
+def get_paths(path):
     for dir, subdir, files in os.walk(path):
         for file in files:
             filepath = os.path.join(dir, file)
-            validated_lines.append(filepath)
+            # validated_lines.append(filepath)
             read_file(filepath)
             validated_lines.append("<>")
 
 def read_file(filepath):
+    conta = 0
     with open(filepath) as fp:
         line = fp.readline()
         while line:
-            validate_automata(line.strip())
+            is_valid = validate_automata(line.strip())
+            if is_valid==True:
+                if conta == 0:
+                    validated_lines.append(filepath)
+                    conta = 1
+                validated_lines.append(line.strip())
             line = fp.readline()
 
 def validate_automata(text):
     if dfa.dfa.accepts_input(text):
-        validated_lines.append(text)
+        # validated_lines.append(text)
+        return True
+    else:
+        return False
 
 def separate_list():
     temp = []
@@ -34,7 +49,7 @@ def separate_list():
             temp = []
 
 def write_txt():
-    f = open("Reporte.txt","a+")
+    f = open("Reporte.txt","w+")
     for x in path_items:
         for j in range(len(x)):
             if j==0:
@@ -55,9 +70,11 @@ def write_txt():
                     # f.write(a)
                     f.write("\n")
                     # f.write(x[j] + "\n")
-    f.write("-----------------------------------------------------------------------------------")
+        f.write("\n")
     f.close()
 
-get_paths()
-separate_list()
-write_txt()
+def main(path):
+    restart_lists()
+    get_paths(path)
+    separate_list()
+    write_txt()
