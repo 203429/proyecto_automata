@@ -3,5 +3,5 @@
 ## Validador de importaciones para proyectos en Python
 ## Librerías utilizadas para el proyecto.
 ```bash
-npm instal automata-lib
+npm install automata-lib
 ```
