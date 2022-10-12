@@ -1,136 +1,16 @@
+Importaciones encontradas en: C:/Users/IzAla/Downloads/examples\example1.py
+> threading import Thread, Semaphore  
+> random 
+> os 
+> time 
 
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\manage.py
-> os
-> sys
-> django.core.management import execute_>_command_line 
+Importaciones encontradas en: C:/Users/IzAla/Downloads/examples\example2.py
+> django.core.wsgi import get_wsgi_application  
+> time 
+>  
+> osrandom 
+> threading 
 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\login\admin.py
-> django.contrib import admin 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\login\apps.py
-> django.apps import AppConfig 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\login\models.py
-> django.db import models 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\login\tests.py
-> django.test import TestCase 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\login\urls.py
-> django.urls import path, re_path 
-> django.conf.urls import include 
-> login.views import loginAuth 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\login\views.py
-> django.shortcuts import render 
-> django.template import context 
-> rest_framework.authtoken.views import ObtainAuthToken 
-> rest_framework.authtoken.models import Token 
-> rest_framework.response import Response 
-
-
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\neotech_backend\asgi.py
-> os
-> django.core.asgi import get_asgi_application 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\neotech_backend\settings.py
-> pathlib import Path 
-> dotenv import load_dotenv 
-> os
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\neotech_backend\urls.py
-> django.urls import path, include, re_path 
-> rest_framework import routers, serializers, viewsets 
-> django.contrib.auth.models import User 
-> django.conf import settings 
-> django.conf.urls.static import static 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\neotech_backend\wsgi.py
-> os
-> django.core.wsgi import get_wsgi_application 
-
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\riego\admin.py
-> django.contrib import admin 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\riego\apps.py
-> django.apps import AppConfig 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\riego\models.py
-> django.db import models 
-> django.utils import timezone 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\riego\serializers.py
-> rest_framework import serializers 
-> riego.models import riego_modelo 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\riego\tests.py
-> django.test import TestCase 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\riego\urls.py
-> django.urls import path, re_path 
-> django.conf.urls import include 
-> riego.views import riego_viewAll 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\riego\views.py
-> rest_framework.views import APIView 
-> rest_framework.response import Response 
-> rest_framework import status 
-> json
-> riego.models import riego_modelo 
-> riego.serializers import riego_serializer 
-
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\riego\migrations\0001_initial.py
-> django.db import migrations, models 
-
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\admin.py
-> django.contrib import admin 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\apps.py
-> django.apps import AppConfig 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\models.py
-> django.db import models 
-> django.utils import timezone 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\serializers.py
-> rest_framework import serializers 
-> valores.models import valores_modelo 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\tests.py
-> django.test import TestCase 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\urls.py
-> django.urls import path, re_path 
-> django.conf.urls import include 
-> valores.views import valores_viewAll, valores_viewAmbiente, valores_viewSuelo, valores_viewAgua 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\views.py
-> rest_framework.views import APIView 
-> rest_framework.response import Response 
-> rest_framework import status 
-> json
-> valores.models import valores_modelo 
-> valores.serializers import valores_serializer, valores_ambiente_serializer, valores_suelo_serializer, valores_agua_serializer 
-
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\migrations\0001_initial.py
-> django.db import migrations, models 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\migrations\0002_valores_modelo_fecha.py
-> datetime
-> django.db import migrations, models 
-> django.utils.timezone import utc 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\migrations\0003_alter_valores_modelo_fecha.py
-> datetime
-> django.db import migrations, models 
-
-Importaciones encontradas en: C:/Users/IzAla/Downloads/neotech-backend-master/neotech-backend-master\valores\migrations\0004_alter_valores_modelo_fecha.py
-> django.db import migrations, models 
-
+Importaciones encontradas en: C:/Users/IzAla/Downloads/examples\sub\example3.py
+> math 
 
