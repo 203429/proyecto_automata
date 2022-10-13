@@ -1,5 +1,5 @@
 from tkinter import *
-from tkinter import filedialog
+from tkinter import filedialog, messagebox
 import main as m
 
 tf_validate = False
@@ -17,8 +17,11 @@ def open_dir():
     pathh.insert(END, dirr)
 
 def script(dirr):
-    m.main(dirr)
-    open_file()
+    if m.main(dirr)==False:
+        messagebox.showerror('ERROR','Directorio NO válido')
+    else:
+        m.main(dirr)
+        open_file()
 
 
 ws = Tk()

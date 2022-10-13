@@ -73,7 +73,11 @@ def write_txt():
     f.close()
 
 def main(path):
-    restart_lists()
-    get_paths(path)
-    separate_list()
-    write_txt()
+    try:
+        restart_lists()
+        get_paths(path)
+        separate_list()
+        write_txt()
+        return True
+    except:
+        return False
